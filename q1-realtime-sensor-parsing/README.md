@@ -70,6 +70,22 @@ Packet: 0x10040800 = 268697600
 
 ---
 
+## Testing Your Solution
+
+Your solution goes in `solution_template.py`. Once you've implemented `parseSensorPackets`, run the test suite from inside this directory:
+
+```bash
+# Install pytest if you don't have it
+pip install pytest
+
+# Run all tests
+pytest test_solution.py -v
+```
+
+All 24 tests must pass for a complete solution.
+
+---
+
 ## Constraints
 
 - `1 <= packets.length <= 10^5`
