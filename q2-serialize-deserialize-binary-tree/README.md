@@ -1,7 +1,6 @@
 # Q2: Serialize and Deserialize Binary Tree
 
-**Difficulty:** Hard  
-**Source:** LeetCode 297
+**Difficulty:** Hard
 
 ---
 
