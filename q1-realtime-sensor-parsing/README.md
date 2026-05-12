@@ -47,10 +47,12 @@ Malformed packets are skipped. Return results for all valid packets in the order
 
 ```
 Packet 1: 0x01400071 = 20971761
+  Bits: 0000 | 0001 0100 0000 | 0000 0000 | 0111 | 0001
   Sensor: 0 (LiDAR), Distance: 320, Signal: 0, Parity stored: 7, Seq: 1
   Expected parity: 0^0^1^4^0^0^1 = 4  →  4 != 7  →  malformed, skipped
 
 Packet 2: 0x10FF5502 = 285234434
+  Bits: 0001 | 0000 1111 1111 | 0101 0101 | 0000 | 0010
   Sensor: 1 (Radar), Distance: 255, Signal: 85, Parity stored: 0, Seq: 2
   Expected parity: 1^0^F^F^5^5^2 = 3  →  3 != 0  →  malformed, skipped
 ```
@@ -64,6 +66,7 @@ Both packets are malformed → result is empty.
 
 ```
 Packet: 0x10040800 = 268697600
+  Bits: 0001 | 0000 0000 0100 | 0000 1000 | 0000 | 0000
   Sensor: 1 (Radar), Distance: 4, Signal: 8, Parity stored: 0, Seq: 0
   Expected parity: 1^0^0^4^0^8^0 = 0xD  →  0xD != 0  →  malformed, skipped
 ```
